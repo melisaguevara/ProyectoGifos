@@ -19,7 +19,7 @@ function recomendaciones() {
   var ver_mas = document.getElementsByClassName("ver-mas");
   for (let i = 0; i < 4; i++) {
     const found = fetch(
-      "http://api.giphy.com/v1/gifs/random" + "?api_key=" + apiKey
+      "https://api.giphy.com/v1/gifs/random" + "?api_key=" + apiKey
     )
       .then(response => {
         return response.json();
@@ -43,7 +43,7 @@ function tendencias() {
   var search = document.getElementById("input-busqueda").value;
 
   const found = fetch(
-    "http://api.giphy.com/v1/gifs/trending" + "?api_key=" + apiKey
+    "https://api.giphy.com/v1/gifs/trending" + "?api_key=" + apiKey
   )
     .then(response => {
       return response.json();
@@ -71,7 +71,7 @@ function getSearchResults(search) {
   }
 
   const found = fetch(
-    "http://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + apiKey
+    "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + apiKey
   )
     .then(response => {
       return response.json();
