@@ -99,7 +99,7 @@ function grabar() {
         let div_captura = document.getElementsByClassName("captura")[0];
 
         const upload = fetch(
-          "http://upload.giphy.com/v1/gifs" + "?api_key=" + apiKey,
+          "https://upload.giphy.com/v1/gifs" + "?api_key=" + apiKey,
           {
             method: "POST",
             body: form
@@ -122,7 +122,7 @@ function grabar() {
             //Usa el endpoint get GIF by ID para poder obtener la URL del gif que se acaba de subir
             descargar.addEventListener("click", function() {
               fetch(
-                "http://api.giphy.com/v1/gifs/" +
+                "https://api.giphy.com/v1/gifs/" +
                   data.data.id +
                   "?api_key=" +
                   apiKey
@@ -139,7 +139,7 @@ function grabar() {
             //Usa el endpoint get GIF by ID para poder obtener la URL del gif que se acaba de subir
             copiar.addEventListener("click", function() {
               fetch(
-                "http://api.giphy.com/v1/gifs/" +
+                "https://api.giphy.com/v1/gifs/" +
                   data.data.id +
                   "?api_key=" +
                   apiKey
@@ -194,7 +194,7 @@ function mostrarGifosPrevios() {
 
   if (ids != undefined && ids.length > 0) {
     for (let i = 0; i < ids.length; i++) {
-      fetch("http://api.giphy.com/v1/gifs/" + ids[i] + "?api_key=" + apiKey)
+      fetch("https://api.giphy.com/v1/gifs/" + ids[i] + "?api_key=" + apiKey)
         .then(response => {
           return response.json();
         })
