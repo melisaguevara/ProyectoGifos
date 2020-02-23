@@ -181,6 +181,11 @@ a {
   padding-left: 5%;
   padding-right: 2%;
   vertical-align: middle;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #8f8f8f;
+  letter-spacing: 0;
+  line-height: 18px;
 }
 
 figure {
@@ -190,33 +195,7 @@ figure {
 .lupa {
   float: left;
   vertical-align: middle;
-  content: url("../Imagenes/combinedshape.svg");
-}
 
-.lupa:hover {
-  content: url("../Imagenes/lupa_light.svg");
-}
-
-.search span {
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 16px;
-  color: #8f8f8f;
-  letter-spacing: 0;
-  line-height: 18px;
-}
-
-.search:hover {
-  background: #ce36db;
-  border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
-}
-
-.search span:hover {
-  color: #ffffff;
-}
-
-.search:active {
-  border: 1px dotted #110038;
 }
 
 .buscador2 {
@@ -266,7 +245,7 @@ figure {
 
 .container {
   height: 313px;
-  width: 288px;
+  width: 280px;
   display: inline-block;
   margin-top: 1%;
   background: #e6e6e6;
@@ -320,7 +299,7 @@ figure {
 
 .container2 {
   height: 298px;
-  width: 288px;
+  width: 280px;
   display: inline-block;
   margin-top: 1%;
   background: #e6e6e6;
