@@ -60,12 +60,13 @@ header {
   width: 55px;
 }
 
-a {text-decoration: none;
+a {
+  text-decoration: none;
   color: #110038;
 }
 
 .boton1 {
- display: inline-block;
+  display: inline-block;
   font-family: "Chakra Petch", sans-serif;
   justify-content: center;
   max-height: 36px;
@@ -168,6 +169,11 @@ a {text-decoration: none;
   padding-left: 5%;
   padding-right: 2%;
   vertical-align: middle;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #b4b4b4;
+  letter-spacing: 0;
+  line-height: 18px;
 }
 
 figure {
@@ -177,28 +183,6 @@ figure {
 .lupa {
   float: left;
   vertical-align: middle;
-}
-
-.search span {
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 16px;
-  color: #b4b4b4;
-  letter-spacing: 0;
-  line-height: 18px;
-}
-
-.search:hover {
-  background: #f7c9f3;
-  border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-}
-
-.search span:hover {
-  color: #110038;
-}
-
-.search:active {
-  border: 1px dotted #110038;
 }
 
 .buscador2 {
@@ -245,7 +229,7 @@ figure {
 
 .container {
   height: 313px;
-  width: 288px;
+  width: 280px;
   display: inline-block;
   margin-top: 1%;
   background: #e6e6e6;
@@ -299,7 +283,7 @@ figure {
 
 .container2 {
   height: 298px;
-  width: 288px;
+  width: 280px;
   display: inline-block;
   margin-top: 1%;
   background: #e6e6e6;
