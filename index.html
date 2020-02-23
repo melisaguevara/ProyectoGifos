@@ -25,7 +25,7 @@
 
                 <div class="nav-right">
 
-                    <a class="boton1" href="upload.html"  id="crear" ><span>Crear Gifos</span></a>
+                    <a class="boton1" href="upload.html" id="crear"><span>Crear Gifos</span></a>
 
                     <div class="botones-tema">
 
@@ -37,15 +37,14 @@
                         <button class="boton1" id="flecha" onclick="mostrarEstilos()">
                             <span class="dropdown">
 
-                                <!-- <figure><img src="./Imagenes/dropdown.svg"/></figure> -->
-                                <img src="./Imagenes/dropdown.svg" alt="flecha-dropdown"/>
+                                <img src="./Imagenes/dropdown.svg" alt="flecha-dropdown" />
 
                             </span>
 
                         </button>
 
                         <a href="upload.html" class="boton2">Mis Gifos</a>
-                        
+
                         <div class="estilos">
 
                             <button class="boton-estilo" id="day" onclick="sailorDay()">Sailor Day</button>
@@ -66,23 +65,13 @@
             <div class="buscador">
 
                 <input type="text" class="busqueda" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
-                    id="input-busqueda" >
+                    id="input-busqueda" onfocus="botonActivo()" onblur="botonInactivo()">
 
-                <button class="search" onclick="getSearchResults()">
-                    <!-- <figure><img class="lupa" src="./Imagenes/lupa_inactive.svg" /></figure> -->
-                    <img class="lupa" src="./Imagenes/lupa_inactive.svg" alt="buscar"/>
-                    <span>Buscar</span>
+                <button class="search" onclick="getSearchResults()" onfocus="botonActivo()" onblur="botonInactivo()">
+                    <img class="lupa" src="./Imagenes/lupa_inactive.svg" alt="buscar" />
+                    Buscar
                 </button>
 
-                <!-- <div class="buscador2">
-
-                    <div>Sug1</div>
-
-                    <div>Sug2</div>
-
-                    <div>Sug3</div>
-
-                </div> -->
 
             </div>
 
@@ -127,7 +116,7 @@
 
         </section>
 
-        <section class="tendencias">
+        <section class="tendencias" id="tendencias">
 
             <div class="seccion-titulo">Tendencias:</div>
 
